@@ -21,11 +21,27 @@ window.onload = function() {
     // set the input's type to checkbox
     checkbox.type = "checkbox";
 
+    // create delete button
+    let deleteBtn = document.createElement('button');
+    deleteBtn.textContent = "Delete";
+
+    // add event addEventListener
+
+    deleteBtn.addEventListener('click', function(event){
+      //console.log(event);
+      //this.parentElement = button's <li> parent"
+       toDoList.removeChild(this.parentElement);
+
+    })
+
     // set the title
     newLi.textContent = title;
 
     // attach the checkbox to the li
     newLi.appendChild(checkbox);
+
+    // attach delete button to li
+    newLi.appendChild(deleteBtn);
 
     // attach the li to the ul
     toDoList.appendChild(newLi);
@@ -35,18 +51,4 @@ window.onload = function() {
 
   });
 
-  //remove todo item
-
-  const toDoList = document.querySelector('toDoList');
-  toDoList.addEventListener('click', removeTask);
-
-  function removeTask(e) {
-    if (e.target.parentElement.classList.contains
-    ('checkbox')) {
-
-      if(confirm('Are you sure?')){
-        e.target.parentElement.parentElement.remove();
-      }
-    }
-  }
   }
