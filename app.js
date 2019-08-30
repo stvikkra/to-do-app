@@ -32,5 +32,21 @@ window.onload = function() {
 
     //empty the input
     newToDoText.value = '';
+
   });
+
+  //remove todo item
+
+  const toDoList = document.querySelector('toDoList');
+  toDoList.addEventListener('click', removeTask);
+
+  function removeTask(e) {
+    if (e.target.parentElement.classList.contains
+    ('checkbox')) {
+
+      if(confirm('Are you sure?')){
+        e.target.parentElement.parentElement.remove();
+      }
+    }
+  }
   }
