@@ -22,16 +22,19 @@
     </header>
     </div>
 
-    <form id="addToDoForm" action="#">
-      <div class="mdl-layout mdl-js-layout" id="container">
+  <form id="addToDoForm" action="#">
+    <div class="mdl-textfield mdl-js-textfield">
     <label for="newToDoText" class="mdl-textfield__label">New To-Do:</label>
     <input type="text" id="newToDoText" class="mdl-textfield__input">
-    <button type="submit" class="mdl-button mdl-js-button mdl-button--raised">Add To-Do!</button>
     </div>
+    <div id="addBtn">
+    <button type="submit" class="mdl-button mdl-js-button mdl-button--raised">Add To-Do!</button>
+  </div>
   </form>
 
-
-  <ul id="toDoList">
+  <div class="mdl-layout mdl-js-layout" id="listcontainer">
+  <ul id="toDoList" class="demo-list-control mdl-list">
+  </div>
   </ul>
 
   <script src="app.js"></script>

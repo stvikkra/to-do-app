@@ -1,15 +1,16 @@
 #header-todo {
-  height: 15vh;
+  height: 10vh;
 }
 
 #newToDoText{
   padding-left: 15%;
 }
 
-#container{
-  padding-top: 30%;
-  padding-left: 15%;
+#addToDoForm{
+  padding-top: 15%;
+  padding-left: 5%;
 }
+
 
 #toDoList{
   padding-left: 15%;

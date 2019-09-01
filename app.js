@@ -25,6 +25,13 @@ window.onload = function() {
     let deleteBtn = document.createElement('button');
     deleteBtn.textContent = "Delete";
 
+    // Attempt at MDL styling via js
+
+          //button.appendChild(textContent);
+          //button.className = 'mdl-button mdl-js-button mdl-js-ripple-effect';
+          //componentHandler.upgradeElement(button);
+          //document.getElementById('listcontainer').appendChild(button);
+
     // add event addEventListener
 
     deleteBtn.addEventListener('click', function(event){
